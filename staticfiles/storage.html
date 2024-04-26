@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {%load static %}
+    <script src="{% static 'assets/js/login/redirect.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="{% static 'assets/css/storage/s1.css' %}">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    {% include "sideMenu.html" %}
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            {% include "toolbar.html" %}
+            <!-- ================ Order Details List ================= -->
+            <div class="products">
+                <div class="recentOrdersContainer">
+                    <div class="recentOrders">
+                        <div class="table-cont">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td style="padding-left: 27%;">Price</td>
+                                        <td style="padding-left:20%;">Number</td>
+                                        <td>Company</td>
+                                    </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+
+                        <div class="table-cont">
+                            <div class="scrollable">
+                                <table>
+                                    <thead>
+
+                                    </thead>
+
+                                    <tbody id  = "products">
+                                        <tr>
+                                            <td>Star Refrigerator</td>
+                                            <td>$1200</td>
+                                            <td>Paid</td>
+                                            <td><span class="status delivered">Delivered</span></td>
+                                        </tr>
+                                         <tr>
+                                            <td>Star Refrigerator</td>
+                                            <td>$1200</td>
+                                            <td>Paid</td>
+                                            <td><span class="status delivered">Delivered</span></td>
+                                        </tr>
+                                         <tr>
+                                            <td>Star Refrigerator</td>
+                                            <td>$1200</td>
+                                            <td>Paid</td>
+                                            <td><span class="status delivered">Delivered</span></td>
+                                        </tr>
+
+
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="types">
+                    <div class="cardHeader" style="justify-content: center;">
+                        <h2>Purchases</h2>
+                    </div>
+                    <div class="table-cont">
+                        <div class="scrollable">
+                            <table>
+                               
+                                {% for type in types %}
+                                 <tr class="type-holder" grap = {{type.grap}}>
+                                    <td style="border-radius: 20px 0px 0px 20px;">{{type.name}}</td>
+                                    <td style="border-radius: 0px"></td>
+                                    <td style="border-radius:0px 20px  20px 0px;">{{type.number}}</td>
+                                </tr>
+                               {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="{% static 'assets/js/login/cockis.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/storage/get-info.js' %}"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

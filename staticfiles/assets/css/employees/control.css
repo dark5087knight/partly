@@ -1,0 +1,49 @@
+.buttons {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+
+.edit {
+
+    /* Set position relative for the container */
+    display: inline-block;
+    margin-top: 10px;
+    /* Adjust margin top as needed */
+    margin-right: 10px;
+    margin-left: 6px;
+    /* Adjust margin left as needed */
+}
+
+.edit button {
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    border: none;
+    border-radius: 20px;
+    background-color: var(--blue);
+    /* Green background color */
+    color: white;
+    /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+}
+
+.edit button:hover {
+    background-color: var(--blue);
+    /* Darker green color on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Increase shadow on hover */
+}
+
+.edit button:active {
+    background-color: var(--blue);
+    /* Dark green color on click */
+    box-shadow: none;
+    /* Remove shadow on click */
+}
+
+

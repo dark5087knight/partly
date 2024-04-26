@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{% static 'assets/js/login/redirect.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <style type="text/css">
+        .chart-container {
+            width: 100%;
+            /* Adjust the width as needed */
+            height: 420px;
+
+            /* Adjust the height as needed */
+            margin: 0 auto 0 1%;
+            /* Centers the chart with a little margin to the left */
+            /* Centers the chart */
+        }
+    </style>
+    <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <div class="container">
+    <!-- =============== Navigation ================ -->
+        {% include "sideMenu.html" %}
+        <!-- ========================= Main ==================== -->
+        
+        <div class="main">
+        {% include "toolbar.html" %}
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div  id = "customers"  class="numbers">{{card.customers}}</div>
+                        <div class="cardName">Customers</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div id = "produts" class="numbers">{{card.prouducts}}</div>
+                        <div class="cardName">Sold Produts</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div id = "sales" class="numbers">${{card.sales}}</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+
+                    <div class="iconBx">
+                    <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div id = "earning" class="numbers">${{card.earning}}</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="logo-usd"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= Chart ================== -->
+            <div id="container" class="chart-container"></div>
+
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="{% static 'assets/js/login/cockis.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/home/script.js' %}"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

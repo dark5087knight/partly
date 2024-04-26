@@ -1,0 +1,124 @@
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 85%;
+  top: 3%;
+  background-color: var(--blue);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.add button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+.info_holder .name {
+  width: 50%;
+  height: 10%;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.info_holder .name input {
+  width: 100%;
+  /* Adjust width as needed */
+  height: 100%;
+  /* Adjust height as needed */
+  padding: 10px;
+  /* Adjust padding as needed */
+  border: none;
+  /* Remove default border */
+  border-radius: 20px;
+  /* Apply border radius */
+  outline: none;
+  /* Remove outline on focus */
+  box-sizing: border-box;
+}
+
+.info_holder .number {
+  width: 50%;
+  height: 10%;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.info_holder .number input {
+  margin-top: 10px;
+  width: 100%;
+  /* Adjust width as needed */
+  height: 100%;
+  /* Adjust height as needed */
+  padding: 10px;
+  /* Adjust padding as needed */
+  border: none;
+  /* Remove default border */
+  border-radius: 20px;
+  /* Apply border radius */
+  outline: none;
+  /* Remove outline on focus */
+  box-sizing: border-box;
+
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.info_holder .number input[type="number"]::-webkit-inner-spin-button,
+.info_holder .number input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  /* Remove spinner */
+}
+
+.button {
+  position: relative;
+  /* Set position relative for the container */
+  display: inline-block;
+  margin-top: 20px;
+  /* Adjust margin top as needed */
+  margin-left: 50px;
+  /* Adjust margin left as needed */
+}
+
+.button button {
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  border: none;
+  border-radius: 20px;
+  background-color: var(--blue);
+  /* Green background color */
+  color: white;
+  /* White text color */
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadow effect */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  /* Smooth transition */
+}
+
+.button button:hover {
+  background-color: var(--blue);
+  /* Darker green color on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  /* Increase shadow on hover */
+}
+
+.button button:active {
+  background-color: var(--blue);
+  /* Dark green color on click */
+  box-shadow: none;
+  /* Remove shadow on click */
+}

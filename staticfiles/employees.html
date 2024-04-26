@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {%load static %}
+    <script src="{% static 'assets/js/login/redirect.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/employees/add.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/employees/employee_info.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/employees/employee_in.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/employees/control.css' %}">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    {% include "sideMenu.html" %}
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+        {% include "toolbar.html" %}
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+
+                <!-- ================= New Customers ================ -->
+                <div id="employee_holder" class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Emplyees</h2>
+                        <div id = 'add' class="add">
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div id = 'table' class="table-cont">
+                        <div class="scrollable">
+                            <table id = "employees">
+                               {% for employee in employees %}
+                                <tr onclick="nav( {{employee.id}} )" class="emplyee-holder" employID = {{employee.id}} >
+                                    <td width="60px" id="hii">
+                                        <div class="imgBx"><img src="{% static 'assets/imgs/customer01.jpg' %}" alt=""></div>
+                                    </td>
+                                    <td class="word-td" style="border-radius: 0px 20px 20px 0px;">
+                                        <h4 id="hi">{{employee.name}} <br> <span>{{employee.id}}</span></h4>
+                                    </td>
+                                </tr>
+                               {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- costemer information -->
+                <div id="employee_info" class="employee-info">
+                    
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =========== Scripts =========  -->
+    <script src="{% static 'assets/js/login/cockis.js' %}"></script>
+    <script src="{% static 'assets/js/employees/get_info.js' %}" data-endpoint-url="{% url 'your_django_endpoint' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/employees/send.js' %}"></script>
+    <script src="{% static 'assets/js/employees/editing.js' %}"></script>
+    <script src="{% static 'assets/js/employees/saves.js' %}"></script>
+    <script src="{% static 'assets/js/employees/deleting.js' %}"></script>
+    
+    <!-- ====== ionicons ======= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

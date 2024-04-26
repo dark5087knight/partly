@@ -1,0 +1,190 @@
+.employee-info {
+    position: fixed;
+    /* You can use fixed or absolute position depending on your layout */
+    top: 55%;
+    /* Adjust this value as needed */
+    right: 35%;
+    width: 40%;
+    height: 70%;
+    /* Adjust this value as needed */
+    transform: translateY(-40%);
+    /* To vertically center the element */
+    display: grid;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.employee-info .information .name {
+    background-color: var(--blue);
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: fixed;
+    width: 68%;
+    height: 8%;
+    border-radius: 20px;
+    top: 13%;
+    left: 30%;
+}
+
+.employee-info .information .name h3 {
+    position: fixed;
+    padding: 5px;
+    padding-left: 8px;
+    padding-top: 7px;
+}
+
+.employee-info .information .id {
+    position: fixed;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    height: 6%;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 20px;
+    top: 22%;
+    left: 35%;
+}
+
+.employee-info .information .id {
+    position: fixed;
+    padding: 5px;
+    padding-left: 8px;
+    padding-top: 4px;
+
+}
+
+.employee-info .information .content {
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 35%;
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+
+.phone,
+.email,
+.address,
+.job,
+.hire {
+    color: white;
+    margin-left: 3%;
+    margin-top: 6.5%;
+    width: 100%;
+}
+
+.phone #phone {
+    width: 70%;
+    /* Adjust as needed */
+    display: inline;
+    /* Change from inline to inline-block */
+}
+
+.phone #number {
+    width: 30%;
+    /* Adjust as needed */
+    display: inline;
+    margin-left: 10px;
+    /* Change from inline to inline-block */
+}
+
+#phone_header {
+    width: 70%;
+    /* Adjust as needed */
+    display: inline;
+    margin-left: 8px;
+    /* Change from inline to inline-block */
+}
+
+#phone {
+    width: 30%;
+    /* Adjust as needed */
+    display: inline;
+    margin-left: 20px;
+    /* Change from inline to inline-block */
+}
+
+#email_header {
+    width: 70%;
+    /* Adjust as needed */
+    margin-left: 10px;
+    display: inline;
+    /* Change from inline to inline-block */
+}
+
+.email #email {
+    width: 30%;
+    /* Adjust as needed */
+    display: inline;
+    margin-left: 25px;
+    /* Change from inline to inline-block */
+}
+
+#address_header {
+    width: 70%;
+    /* Adjust as needed */
+    display: inline;
+    /* Change from inline to inline-block */
+}
+
+.address #address {
+    width: 30%;
+    /* Adjust as needed */
+    display: inline;
+    margin-left: 15px;
+    /* Change from inline to inline-block */
+}
+
+#job_header {
+    width: 70%;
+    /* Adjust as needed */
+    display: inline;
+    /* Change from inline to inline-block */
+}
+
+.job #job {
+    width: 30%;
+    /* Adjust as needed */
+    display: inline;
+    margin-left: 10px;
+    /* Change from inline to inline-block */
+}
+
+#hire_header {
+    width: 70%;
+    /* Adjust as needed */
+    display: inline;
+    /* Change from inline to inline-block */
+}
+
+.hire #hire {
+    width: 30%;
+    /* Adjust as needed */
+    display: inline;
+    margin-left: 7px;
+    /* Change from inline to inline-block */
+}
+
+.employee-info .imgBx {
+    width: 25%;
+    height: 25%;
+}
+
+.employee-info .imgBx img {
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    display: inline;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.employee-info .cardHeader {
+    background-color: #f00;
+}
+
+.employHeader {
+    background-color: #f00;
+    height: 25%;
+}
