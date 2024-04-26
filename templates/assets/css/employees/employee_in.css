@@ -1,0 +1,216 @@
+.info_holder .name {
+    width: 50%;
+    height: 10%;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+.employee-info .information .name_in {
+    background-color: white;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: fixed;
+    width: 68%;
+    height: 8%;
+    border-radius: 20px;
+
+    top: 13%;
+    left: 30%;
+}
+
+.phone_in,
+.email_in,
+.address_in,
+.job_in,
+.hire_in {
+    color: white;
+    margin-left: 3%;
+    margin-top: 4%;
+    width: 100%;
+}
+
+#name_in input {
+
+    width: 100%;
+
+    /* Adjust width as needed */
+    height: 100%;
+    /* Adjust height as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+    border: none;
+    /* Remove default border */
+    border-radius: 20px;
+    /* Apply border radius */
+
+    /* Remove outline on focus */
+    box-sizing: border-box;
+    outline: 2px solid var(--blue);
+}
+
+#phone_in input {
+    display: inline;
+    width: 70%;
+    margin-left: 10px;
+    /* Adjust width as needed */
+    height: 30%;
+    /* Adjust height as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+    border: none;
+    /* Remove default border */
+    border-radius: 20px;
+    /* Apply border radius */
+    outline: none;
+    /* Remove outline on focus */
+    box-sizing: border-box;
+    margin-left: 23px;
+}
+
+#email_in input {
+    display: inline;
+    width: 70%;
+    margin-left: 10px;
+    /* Adjust width as needed */
+    height: 30%;
+    /* Adjust height as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+    border: none;
+    /* Remove default border */
+    border-radius: 20px;
+    /* Apply border radius */
+    outline: none;
+    /* Remove outline on focus */
+    box-sizing: border-box;
+    margin-left: 27px
+}
+
+#address_in input {
+    display: inline;
+    width: 70%;
+    margin-left: 10px;
+    /* Adjust width as needed */
+    height: 30%;
+    /* Adjust height as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+    border: none;
+    /* Remove default border */
+    border-radius: 20px;
+    /* Apply border radius */
+    outline: none;
+    /* Remove outline on focus */
+    box-sizing: border-box;
+    margin-left: 18px
+}
+
+#job_in input {
+    display: inline;
+    width: 70%;
+    margin-left: 10px;
+    /* Adjust width as needed */
+    height: 30%;
+    /* Adjust height as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+    border: none;
+    /* Remove default border */
+    border-radius: 20px;
+    /* Apply border radius */
+    outline: none;
+    /* Remove outline on focus */
+    box-sizing: border-box;
+    margin-left: 15px
+}
+
+#hire_in input {
+    display: inline;
+    width: 70%;
+    margin-left: 10px;
+    /* Adjust width as needed */
+    height: 30%;
+    /* Adjust height as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+    border: none;
+    /* Remove default border */
+    border-radius: 20px;
+    /* Apply border radius */
+    outline: none;
+    /* Remove outline on focus */
+    box-sizing: border-box;
+}
+
+#job_in,
+#phone_in,
+#email_in,
+#address_in,
+#job_in,
+#hire_in {
+    display: inline;
+}
+
+.info_holder .number {
+    width: 50%;
+    height: 10%;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+}
+
+#phone_in input {
+
+
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#phone_in input[type="number"]::-webkit-inner-spin-button,
+#phone_in input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    /* Remove spinner */
+}
+
+.button {
+    position: relative;
+    /* Set position relative for the container */
+    display: inline-block;
+    margin-top: 20px;
+    /* Adjust margin top as needed */
+    margin-left: 50px;
+    /* Adjust margin left as needed */
+}
+
+.button button {
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    border: none;
+    border-radius: 20px;
+    background-color: var(--blue);
+    /* Green background color */
+    color: white;
+    /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+}
+
+.button button:hover {
+    background-color: var(--blue);
+    /* Darker green color on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Increase shadow on hover */
+}
+
+.button button:active {
+    background-color: var(--blue);
+    /* Dark green color on click */
+    box-shadow: none;
+    /* Remove shadow on click */
+}

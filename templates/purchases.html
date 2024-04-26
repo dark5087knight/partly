@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {%load static %}
+    <script src="{% static 'assets/js/login/redirect.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="{% static 'assets/css/purchases/purchases.css' %}">
+</head>
+
+<body style="overflow: hidden;">
+    <!-- =============== Navigation ================ -->
+    {% include "sideMenu.html" %}
+ 
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            {% include "toolbar.html" %}
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrdersContainer">
+                    <div class="recentOrders">
+                        <div class="table-cont">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td style="padding-left: 18%;">Price</td>
+                                        <td style="padding-left: 15%;">Payment</td>
+                                        <td>Status</td>
+                                    </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+
+                        <div class="table-cont">
+                            <div class="scrollable">
+                                <table>
+                                    <thead>
+
+                                    </thead>
+
+                                    <tbody id = "purchases">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="recentCustomers">
+                    <div class="cardHeader" style="justify-content: center;">
+                        <h2>Purchases</h2>
+                    </div>
+                    <div class="table-cont">
+                        <div class="scrollable">
+                            <table>
+                             {% for date in dates %}
+                                 <tr class="date" grap = {{date.pr_number}}>
+                                    <td style="border-radius: 20px 0px 0px 20px;">{{date.date}}</td>
+                                    <td style="border-radius: 0px">{{date.sourcs}}</td>
+                                    <td style="border-radius:0px 20px  20px 0px;">${{date.price}}</td>
+                                </tr>
+                           {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="{% static 'assets/js/login/cockis.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/purchases/purchases.js' %}"></script>
+    <!-- ====== ionicons ======= -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
